@@ -4,37 +4,37 @@ Home Work questions for class 05 conditional statements
 1.
 
    - **Question**: Write a `for` loop that prints the numbers from 10 to 1 in descending order.
-  -for(var i=10;i>=1;i--){
-    -console.log(i);
-  -}
+  for(var i=10;i>=1;i--){
+  console.log(i);
+  }
 
 2. **While Loop**:
 
    - **Question**: Write a `while` loop that prints the first 5 even numbers starting from 0.
-    -var i=0;
-    -var con=0;
-    -while(con<5){
-     -   if(i%2==0){
-      -      console.log(i)
-       -     con++;
-        -}
-       - i++;
-    -}
+   var i=0;
+   var con=0;
+   while(con<5){
+        if(i%2==0){
+            console.log(i)
+            con++;
+        }
+        i++;
+   }
 
 3. **Do-While Loop**:
 
    - **Question**: Write a `do-while` loop that prints the numbers from 1 to 5.
-   - var i=1;
+    var i=1;
       do{
           console.log(i);
           i++;
       }while(i<=5);
-   - 
+    
 
 4. **Break Statement**:
 
    - **Question**: Write a `for` loop that prints numbers from 0 to 10, but stops the loop when the number 7 is reached.
-   - for(var i=0;i<=10;i++){
+    for(var i=0;i<=10;i++){
         if(i==7) 
             break;
           console.log(i);
@@ -43,7 +43,7 @@ Home Work questions for class 05 conditional statements
 5. **Continue Statement**:
 
    - **Question**: Write a `for` loop that prints numbers from 0 to 10, but skips the number 5.
-   - for(var i=0;i<=10;i++){
+    for(var i=0;i<=10;i++){
           if(i==5) 
               continue;
           console.log(i);
@@ -52,7 +52,7 @@ Home Work questions for class 05 conditional statements
 6. **If-Else Statement**:
 
    - **Question**: Write an `if-else` statement that checks if a given number `x` is positive, negative, or zero, and prints an appropriate message.
-   -  // var i=3;
+     // var i=3;
       // var i=0;
       var i=-5;
       if(i>0){
