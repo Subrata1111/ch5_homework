@@ -1,0 +1,66 @@
+1. Code a basic calculator in JavaScript using functions.
+
+let a = prompt("Enter 1st number ");
+let b = prompt("Enter 2nd number ");
+let c = prompt("Enter operator(+-*/)");
+function add(a, b) {
+    return a + b;
+}
+function sub(a, b) {
+    return a - b;
+}
+function mul(a, b) {
+    return a * b;
+}
+function div(a, b) {
+    return a / b;
+}
+switch (c) {
+    case '+': console.log("Addition  is : ", add(a, b));
+        break;
+    case '-': console.log("Subtraction is : ", sub(a, b));
+        break;
+    case '*': console.log("Multiplication is : ", mul(a, b));
+        break;
+    case '/': console.log("Division is : ", div(a, b));
+        break;
+}
+
+2. Write a program to check a number prime or not.
+
+let num = prompt("Enter a number");
+let count = 0;
+if(num<=1){
+    count =1;
+}else{
+    for (let i = 2; i < num; i++) {
+        if (num % i == 0) {
+            count=1;
+            break;
+        }
+    }
+}
+console.log(count);
+if (count == 0) {
+    console.log("Your number ", num, " is prime");
+} else {
+    console.log("your number is", num, " not prime");
+}
+
+3. Write a program to find 2nd smallest from 3 numbers.
+
+let a = prompt("Enter 1st number");
+let b = prompt("Enter 2nt number");
+let c = prompt("Enter 3rd number");
+let d = (a < b) ? ((a < c) ? a : c) : ((b < c) ? b : c);
+console.log("Smallest number is : ", d);
+
+5. Write a Objet called Laptop and define a object method that prints the description about the laptop using object variable that are modelName, price, ramSize, memory.
+
+const laptop = {
+    modelName: "ASUS TUF Gaming F15",
+    price: 71990,
+    ramSize: "16 GB",
+    memory: "512 GB",
+}
+console.log(`Model name is ${laptop.modelName} , price is ${laptop.price}, Ram Size is ${laptop.ramSize}, Memory Size is ${laptop.memory}`);
